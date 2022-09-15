@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Great+Vibes&family=Roboto:wght@400;500;700;900&display=swap");
+@font-face {
+  font-family: "Sansita One";
+  src: url("../sansita-one/SansitaOne.woff2") format("woff2"), url("../sansita-one/SansitaOne.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/*
+font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: #faf2ed;
+  overflow-x: hidden;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+figure,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  color: #0B0D0A;
+  font-size: 0.9vw;
+  font-family: "Gowun Dodum", sans-serif;
+  vertical-align: middle;
+  line-height: 1.4vw;
+}
+
+.h1 {
+  font-family: "Sansita One";
+  font-size: 3.2vw;
+  color: #80171b;
+}
+
+.h2 {
+  font-family: "Sansita One";
+  font-size: 3vw;
+  color: #513f29;
+}
+
+.h3 {
+  font-family: "Sansita One";
+  font-size: 2vw;
+  color: #bc9273;
+}
+
+.point-string {
+  font-family: "Great Vibes", cursive;
+  font-size: 7.5vw;
+  color: rgba(128, 23, 27, 0.75);
+}
+
+.title-string {
+  font-family: "Roboto", sans-serif;
+  font-size: 5vw;
+  font-weight: bolder;
+  color: #FAF2ED;
+}
+
+.string {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2vw;
+  color: #FAF2ED;
+}
+
+.explan-title {
+  font-size: 1.2vw;
+  color: #0b0d0a;
+  font-weight: bold;
+}
+
+.explan-subtitle {
+  font-size: 0.9vw;
+  color: #0b0d0a;
+  font-weight: bold;
+}
+
+.sequence {
+  font-family: "Sansita One";
+  font-size: 1.5vw;
+  color: #513f29;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transition: 0.5s;
+}
+header.active {
+  transform: translateY(-100%);
+}
+header .top {
+  width: 82%;
+  margin: 2.5vw auto 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top > h1 a {
+  display: inline-block;
+  flex-shrink: 0;
+}
+header .top > h1 a:hover {
+  color: #bc9273;
+}
+header .top .menu .h3 {
+  display: inline-block;
+  margin-right: 6vw;
+}
+header .top .menu .h3:nth-of-type(4) {
+  margin-right: 0;
+}
+header .top .menu .h3:hover {
+  color: #80171b;
+}
+
+footer {
+  width: 100%;
+  background-color: #bc9273;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+footer .bottom {
+  width: 82%;
+  margin: 0 auto;
+}
+footer .bottom > p {
+  padding: 2vw 0;
+  text-align: center;
+}
+
+.loding-motion {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #faf2ed;
+  position: relative;
+  z-index: 999;
+}
+.loding-motion > svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+==============================================
+=================반응형 데스크탑================
+==============================================
+*/
+@media (min-width: 1025px) and (max-width: 1600px) {
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: 0.5s;
+  }
+  header.active {
+    transform: translateY(-100%);
+  }
+  header .top {
+    width: 82%;
+    margin: 2vw auto 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .top > h1 {
+    flex-shrink: 0;
+  }
+  header .top > h1 a {
+    display: inline-block;
+  }
+  header .top > h1 a:hover {
+    color: #bc9273;
+  }
+  header .top .menu {
+    flex-shrink: 0;
+  }
+  header .top .menu .h3 {
+    display: inline-block;
+    margin-right: 6vw;
+  }
+  header .top .menu .h3:nth-of-type(4) {
+    margin-right: 0;
+  }
+  header .top .menu .h3:hover {
+    color: #80171b;
+  }
+  footer {
+    width: 100%;
+    background-color: #bc9273;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .bottom {
+    width: 82%;
+    margin: 0 auto;
+  }
+  footer .bottom > p {
+    padding: 2vw 0;
+    text-align: center;
+  }
+}/*# sourceMappingURL=common.css.map */

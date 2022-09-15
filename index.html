@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./img/favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicomatic/favicon-16x16.png" sizes="16x16" />
+
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/book.css" rel="stylesheet">
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script defer type="text/javascript" src="./js/common.js"></script>
+    <script defer type="text/javascript" src="./js/index.js"></script>
+
+
+</head>
+
+<body>
+    <header></header>
+
+    <canvas></canvas>
+
+    <div class="loding-motion">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="margin: auto; background: rgb(250, 242, 237); display: block; shape-rendering: auto;" width="200px"
+            height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <g transform="rotate(0 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(30 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(60 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(90 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(120 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(150 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(180 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(210 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(240 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(270 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(300 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <g transform="rotate(330 50 50)">
+                <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#80171b">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s"
+                        repeatCount="indefinite"></animate>
+                </rect>
+            </g>
+            <!-- [ldio] generated by https://loading.io/ -->
+        </svg>
+    </div>
+
+    <aside>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Works</a>
+        <a href="#">Contact</a>
+    </aside>
+
+    <main>
+        <div id="fullpage" class="contents">
+
+            <section class="title section active">
+                <div class="shape_box">
+                    <p class="shape_main">
+                        <svg viewBox="0 0 780 611" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M312.975 569.372C344.786 586.939 361.691 601.965 397.461 608.372C422.443 612.847 437.182 610.751 462.45 608.372C529.589 602.05 624.922 549.872 624.922 549.872C624.922 549.872 723.444 507.485 754.9 452.373C788.966 392.689 783.168 343.88 767.898 276.874C753.765 214.853 731.533 181.974 689.911 133.875C634.626 69.9854 588.821 41.2827 507.942 16.8755C422.899 -8.78812 367.233 -2.22408 280.48 16.8755C204.973 33.4992 155.886 43.0427 98.5111 94.875C38.6849 148.922 -7.55085 196.7 1.02757 276.874C8.2185 344.08 50.059 372.756 98.5111 419.873C136.376 456.694 165.653 467.689 208.992 497.873C249.433 526.037 269.835 545.549 312.975 569.372Z"
+                                fill="#BC9273" />
+                        </svg>
+                    </p>
+                    <p class="shape_01">
+                        <svg viewBox="0 0 267 239" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.63006 200.662C6.43342 212.67 6.41223 221.113 14.7303 230.223C31.2807 248.351 53.2567 233.266 77.6315 230.223C120.262 224.902 143.286 213.387 181.233 193.272C210.617 177.697 233.995 173.463 251.535 145.235C260.453 130.883 264.481 121.377 266.335 104.589C270.585 66.101 254.306 37.2167 221.934 15.9052C208.941 7.35103 200.281 3.69878 184.934 1.12461C150.232 -4.69557 130.303 13.1119 99.8319 30.6857C66.1631 50.104 46.8927 64.5609 25.8305 97.1983C14.6229 114.565 8.1715 125.078 3.63006 145.235C-1.12777 166.353 -1.29158 179.582 3.63006 200.662Z"
+                                fill="#EBCFC1" />
+                        </svg>
+                    </p>
+                    <p class="shape_02">
+                        <svg viewBox="0 0 319 341" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M265.903 284.618C261.571 300.324 267.575 312.651 257.474 325.468C243.922 342.663 225.135 338.843 203.243 339.999C187.657 340.822 178.678 339.652 163.472 336.184C119.327 326.116 98.7746 303.553 68.3838 270.19L68.2502 270.043C41.4643 240.638 28.9075 220.315 15.8091 182.792C4.35114 149.969 -2.08272 129.406 1.93379 94.8549C4.38552 73.7643 3.75275 59.2396 16.9893 42.5813C28.8393 27.668 41.175 24.808 58.5637 16.9697C104.298 -3.64601 137.165 -1.4975 186.613 6.77872C221.578 12.6309 243.974 15.5526 272.186 36.9128C292.99 52.6638 307.384 63.2354 314.98 88.1576C319.871 104.206 317.767 114.331 316.795 131.087C314.572 169.424 301.517 189.153 288.791 225.421C280.586 248.806 272.491 260.733 265.903 284.618Z"
+                                fill="#E6C6AB" />
+                        </svg>
+
+                    </p>
+                    <p class="shape_03">
+                        <svg viewBox="0 0 367 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M171.809 410.563C184.793 418.423 193.486 422.012 208.638 423.003C227.548 424.24 255.515 410.443 255.515 410.443C255.515 410.443 284.156 399.232 299.603 387.475C331.611 363.111 341.12 338.239 354.397 300.289C367.818 261.926 368.188 237.416 365.759 196.855C362.866 148.552 361.535 116.752 333.69 77.1727C311.171 45.163 291.61 29.5688 255.482 14.4707C210.64 -4.26829 178.283 -3.10533 131.134 8.74932C89.0315 19.335 61.3969 29.0759 33.9342 62.6798C6.96051 95.6854 0.336562 123.891 0.343301 166.493C0.348962 202.26 8.95945 222.526 24.0464 254.954C41.1862 291.794 55.9981 311.005 85.6036 338.849C105.234 357.312 121.121 361.762 141.215 379.72C153.865 391.026 157.293 401.774 171.809 410.563Z"
+                                fill="#F2E5D7" />
+                        </svg>
+                    </p>
+                </div>
+                <div class="title-all">
+                    <p class="point-string point">Web Publishing</p>
+                    <p class="title-string main-title">PORTFOLIO.</p>
+                    <p class="string sub-title">Publisher, Park-Sanghee</p>
+                </div>
+            </section>
+
+            <section class="about-page con section">
+                <div class="centerline"><span></span></div>
+                <div class="shape-bg">
+
+                    <p class="shape2-1">
+                        <svg viewBox="0 0 248 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M244.628 35.6108C242.024 24.4576 242.044 16.6151 234.318 8.15233C218.945 -8.6861 198.533 5.32597 175.893 8.15233C136.296 13.0955 114.911 23.7909 79.6633 42.4754C52.3712 56.9429 30.6567 60.8753 14.3647 87.0954C6.08147 100.426 2.33954 109.256 0.617569 124.851C-3.33 160.601 11.7908 187.431 41.8588 207.226C53.9277 215.172 61.9709 218.564 76.2265 220.955C108.458 226.362 126.97 209.821 155.272 193.497C186.545 175.46 204.444 162.031 224.008 131.715C234.418 115.584 240.41 105.819 244.628 87.0954C249.048 67.4798 249.2 55.1916 244.628 35.6108Z"
+                                fill="#ED7478" fill-opacity="0.2" />
+                        </svg>
+                    </p>
+
+                    <p class="shape2-2">
+                        <svg width="227" height="220" viewBox="0 0 227 220" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M180.403 19.2229C191.54 20.492 199.271 15.0916 209.064 20.5935C222.203 27.975 221.626 41.1626 224.762 55.9297C226.996 66.4439 227.165 72.6762 226.442 83.3902C224.343 114.493 211.221 130.883 191.817 155.118L191.731 155.225C174.629 176.585 162.169 187.297 138.082 200.214C117.011 211.514 103.731 218.086 79.8231 219.044C65.2298 219.629 55.4289 221.611 42.6886 214.386C31.2829 207.919 28.0147 199.833 20.8211 188.843C1.90117 159.936 -0.169451 137.35 0.142339 102.831C0.362807 78.4225 -0.0577495 62.8762 11.425 41.4048C19.8924 25.5717 25.5291 14.6517 41.6467 6.82341C52.0251 1.78264 59.1311 2.13233 70.6198 1.00359C96.9068 -1.57906 111.714 5.19447 137.724 9.9767C154.494 13.0602 163.467 17.2931 180.403 19.2229Z"
+                                fill="#E6C6AB" fill-opacity="0.65" />
+                        </svg>
+                    </p>
+                </div>
+
+                <article class="content-title">
+                    <h2 class="h2">About</h2>
+                    <span class="underline"></span>
+                </article>
+
+                <div class="about-detail">
+                    <div class="about-contents">
+                        <div class="about-me">
+                            <p class="photo"><img src="./img/proflie.png" alt="about-me"></p>
+                            <p class="intro">안녕하세요,
+                                밝고 열정적인 성격으로
+                                도전을 두려워하지 않고,
+                                적극적인 자세로 일은 꼼꼼한 박상희 입니다!</p>
+                        </div>
+                        <div class="education">
+                            <p class="small-title"><b>Education</b></p>
+                            <ul class="list01">
+                                <li>
+                                    2022.09 : 강남 그린컴퓨터 아카데미<br>
+                                    <span>UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</span>
+                                </li>
+                                <li>2012.02 : 인덕대학 졸업</li>
+                                <li>2010.02 : 서울 정화여자상업고등학교 졸업</li>
+                            </ul>
+                        </div>
+                        <div class="certificate">
+                            <p class="small-title"><b>Certificate</b></p>
+                            <ul class="list02">
+                                <li>
+                                    <p>2011.01 : 운전면허 2종 보통</p>
+                                    <p>2008.02 : 정보처리기능사</p>
+                                    <p>2008.01 : 컴퓨터활용능력 2급</p>
+                                    <p>2007.12 : 정보기술자격(ITQ) A급</p>
+                                    <p>2007.08 : 정보기기운용기능사</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p class="small-title"><b>Skill</b></p>
+                        <ul class="donut-container">
+                            <li>
+                                <div class="donut">
+                                    <svg class="nine" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">90</p>
+                                </div>
+                                <p class="subject">html</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="nine" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">90</p>
+                                </div>
+                                <p class="subject">css & scss</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="seven" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">70</p>
+                                </div>
+                                <p class="subject">javascript</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="seven" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">70</p>
+                                </div>
+                                <p class="subject">jquery</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="five" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">50</p>
+                                </div>
+                                <p class="subject">PHOTOSHOP</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="four" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">40</p>
+                                </div>
+                                <p class="subject">ILLUSTRATOR</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="eight" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">80</p>
+                                </div>
+                                <p class="subject">FIGMA</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="eight" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">80</p>
+                                </div>
+                                <p class="subject">GITHUB</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="nine" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">90</p>
+                                </div>
+                                <p class="subject">ms word</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="eight" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">80</p>
+                                </div>
+                                <p class="subject">ms excel</p>
+                            </li>
+                            <li>
+                                <div class="donut">
+                                    <svg class="eight" version="1.1" width="140" height="140" viewBox="0 0 100 100"
+                                        xml:space="preserve">
+                                        <circle cx="50" cy="50" r="40"></circle>
+                                    </svg>
+                                    <p class="count">80</p>
+                                </div>
+                                <p class="subject">ms ppt</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="works-page con section">
+
+                <article class="content-title">
+                    <h2 class="h2">Works</h2>
+                    <span class="underline"></span>
+                </article>
+
+                <div class="shape-bg">
+                    <p class="shape3-1">
+                        <svg viewBox="0 0 267 239" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.63006 200.662C6.43342 212.67 6.41223 221.113 14.7303 230.223C31.2807 248.351 53.2567 233.266 77.6315 230.223C120.262 224.902 143.286 213.387 181.233 193.272C210.617 177.697 233.995 173.463 251.535 145.235C260.453 130.883 264.481 121.377 266.335 104.589C270.585 66.101 254.306 37.2167 221.934 15.9052C208.941 7.35103 200.281 3.69878 184.934 1.12461C150.232 -4.69557 130.303 13.1119 99.8319 30.6857C66.1631 50.104 46.8927 64.5609 25.8305 97.1983C14.6229 114.565 8.1715 125.078 3.63006 145.235C-1.12777 166.353 -1.29158 179.582 3.63006 200.662Z"
+                                fill="#EBCFC1" />
+                        </svg>
+                    </p>
+                    <p class="shape3-2">
+                        <svg viewBox="0 0 319 341" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M265.903 284.618C261.571 300.324 267.575 312.651 257.474 325.468C243.922 342.663 225.135 338.843 203.243 339.999C187.657 340.822 178.678 339.652 163.472 336.184C119.327 326.116 98.7746 303.553 68.3838 270.19L68.2502 270.043C41.4643 240.638 28.9075 220.315 15.8091 182.792C4.35114 149.969 -2.08272 129.406 1.93379 94.8549C4.38552 73.7643 3.75275 59.2396 16.9893 42.5813C28.8393 27.668 41.175 24.808 58.5637 16.9697C104.298 -3.64601 137.165 -1.4975 186.613 6.77872C221.578 12.6309 243.974 15.5526 272.186 36.9128C292.99 52.6638 307.384 63.2354 314.98 88.1576C319.871 104.206 317.767 114.331 316.795 131.087C314.572 169.424 301.517 189.153 288.791 225.421C280.586 248.806 272.491 260.733 265.903 284.618Z"
+                                fill="#E6C6AB" />
+                        </svg>
+                    </p>
+                    <P class="shape3-3">
+                        <svg viewBox="0 0 367 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M171.809 410.563C184.793 418.423 193.486 422.012 208.638 423.003C227.548 424.24 255.515 410.443 255.515 410.443C255.515 410.443 284.156 399.232 299.603 387.475C331.611 363.111 341.12 338.239 354.397 300.289C367.818 261.926 368.188 237.416 365.759 196.855C362.866 148.552 361.535 116.752 333.69 77.1727C311.171 45.163 291.61 29.5688 255.482 14.4707C210.64 -4.26829 178.283 -3.10533 131.134 8.74932C89.0315 19.335 61.3969 29.0759 33.9342 62.6798C6.96051 95.6854 0.336562 123.891 0.343301 166.493C0.348962 202.26 8.95945 222.526 24.0464 254.954C41.1862 291.794 55.9981 311.005 85.6036 338.849C105.234 357.312 121.121 361.762 141.215 379.72C153.865 391.026 157.293 401.774 171.809 410.563Z"
+                                fill="#F2E5D7" />
+                        </svg>
+                    </P>
+                </div>
+
+                <div id="album">
+                    <div id="flipbook">
+
+                        <div class="page-wrapper page-center p1" page="1">
+                            <div class="bg">
+                                <div class="table-contents">
+                                    <p class="table-title"><img src="./img/table.png" alt="table"></p>
+                                    <ul class="table-list">
+                                        <li>
+                                            <p><img src="./img/contents01.png" alt="list01"><span>“전통시장 통통” 반응형 웹 페이지
+                                                    리뉴얼</span></p>
+                                        </li>
+                                        <li>
+                                            <p><img src="./img/contents02.png" alt="list02"><span>“VA Corporation” 모바일 웹
+                                                    페이지
+                                                    Clone</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><img src="./img/contents03.png" alt="list03"><span>“생활 쏙 법” 모바일 웹 페이지
+                                                    API활용</span></p>
+                                        </li>
+                                    </ul>
+                                    <p class="book-event">
+                                        <img src="./img/book_click.png" alt="click">
+                                        <span>
+                                            Click & Drag
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 반응형 사이트 -->
+                        <div class="page-wrapper page-L p2" page="2">
+                            <div class="bg">
+                                <article class="content-title-1">
+                                    <h2 class="sequence renewal">Renewal</h2>
+                                    <span class="underline"></span>
+                                </article>
+
+                                <p class="explan-title">- 전통시장 통통 -</p>
+                                <p class="explan-subtitle">기여도 및 제작기간
+                                    <span>기획 및 디자인 100%
+                                        제작기간 : 32일</span>
+                                </p>
+                                <p class="explan-subtitle exp">프로젝트 개요
+                                    <span>기존의 웹사이트에서 명확하지 않은 타겟과
+                                        너무 많은 콘텐츠로 가독성을 떨어뜨리고
+                                        트렌드에 맞지 않는 디자인과
+                                        반응형 웹에 대해 개선이 필요해 보였습니다.
+
+                                        20~30대 소비자를 타깃으로 시장의 활성화를 위해
+                                        최대한 가독성이 좋게 심플한 레이아웃으로
+                                        콘텐츠를 구성해 전통시장의 매력과
+                                        주변 관광지를 함께 소개하고 싶었습니다.</span>
+                                </p>
+
+                                <p class="compar_btn">
+                                    <a href="https://psh9112.github.io/project-renewal/" target="_blank">
+                                        사이트 바로가기
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="page-wrapper page-R p3" page="3">
+                            <div class="bg">
+                                <p class="project-img">
+                                    <img src="./img/p_renewal.jpg" alt="renewal-project">
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="page-wrapper page-L p4" page="4">
+                            <div class="bg">
+                                <p class="project-img">
+                                    <img src="./img/p_clone.jpg" alt="clone-projcet">
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 반응형 모바일 사이트 -->
+                        <div class="page-wrapper page-R p5" page="5">
+                            <div class="bg">
+                                <article class="content-title-1">
+                                    <h2 class="sequence clone">Clone</h2>
+                                    <span class="underline"></span>
+                                </article>
+
+                                <p class="explan-title">- VA Corporation -</p>
+                                <p class="explan-subtitle">기여도 및 제작기간
+                                    <span>퍼블리싱 100%
+                                        제작기간 : 13일</span>
+                                </p>
+                                <p class="explan-subtitle exp">프로젝트 개요
+                                    <span>최대한 원래의 사이트의 다양한 기능들을
+                                        배우고 구현하고자 노력했습니다.
+
+                                        이 과정에서 svg, canvas와 같이
+                                        새로운 것을 추가적으로 배우게 되었으며,
+                                        또한, 클릭과 스크롤 이벤트, 슬라이드 플러그인을
+                                        구현하는 것에 어려움을 겪었었지만,
+                                        조금이나마 성장하는 계기가 되었습니다.</span>
+                                </p>
+
+                                <p class="compar_btn">
+                                    <a
+                                        onclick="window.open('https://psh9112.github.io/project_clone/', '_blank', 'left=100,top=100,width=412,height=915')">
+                                        사이트 바로가기
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 반응형 모바일 사이트 -->
+                        <div class="page-wrapper page-L p6" page="6">
+                            <div class="bg">
+                                <article class="content-title-1">
+                                    <h2 class="sequence api">Team-Project</h2>
+                                    <span class="underline"></span>
+                                </article>
+
+                                <p class="explan-title">- 생활 쏙 법 -</p>
+                                <p class="explan-subtitle">기여도 및 제작기간
+                                    <span>기획 및 디자인, 퍼블리싱 60%
+                                        제작기간 : 10일</span>
+                                </p>
+                                <p class="explan-subtitle exp">프로젝트 개요
+                                    <span>API를 활용해 20~ 30대 사회초년생 또는 청년들이
+                                        계약 또는 부당한 대우를 받았을 때
+                                        대처 할 수 있도록 근로, 자취와 관련된
+                                        법률 서비스를 제공하는 사이트를
+                                        퍼블리셔 2명을 팀으로 제작했습니다.</span>
+                                </p>
+
+                                <p class="compar_btn">
+                                    <a
+                                        onclick="window.open('https://psh9112.github.io/Team-project/', '_blank', 'left=100,top=100,width=412,height=915')">
+                                        사이트 바로가기
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="page-wrapper page-R p7" page="7">
+                            <div class="bg">
+                                <p class="project-img">
+                                    <img src="./img/p_team-project.jpg" alt="team-project">
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="page-wrapper page-center p8" page="8">
+                            <div class="bg">
+                                <p class="title-string last-title">The end</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- filpbook -->
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+            <script type="text/javascript" src="./js/turn.min.js"></script>
+            <script type="text/javascript" src="./js/flipbook.js"></script>
+
+            <section class="contact-page con section">
+                <article class="content-title">
+                    <h2 class="h2">Contact</h2>
+                    <span class="underline"></span>
+                </article>
+
+                <div class="centerline"><span></span></div>
+
+                <div class="last">
+                    <div class="thanks">
+                        <div class="shape_main">
+                            <div>
+                                <p>
+                                    <svg viewBox="0 0 780 611" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M312.975 569.372C344.786 586.939 361.691 601.965 397.461 608.372C422.443 612.847 437.182 610.751 462.45 608.372C529.589 602.05 624.922 549.872 624.922 549.872C624.922 549.872 723.444 507.485 754.9 452.373C788.966 392.689 783.168 343.88 767.898 276.874C753.765 214.853 731.533 181.974 689.911 133.875C634.626 69.9854 588.821 41.2827 507.942 16.8755C422.899 -8.78812 367.233 -2.22408 280.48 16.8755C204.973 33.4992 155.886 43.0427 98.5111 94.875C38.6849 148.922 -7.55085 196.7 1.02757 276.874C8.2185 344.08 50.059 372.756 98.5111 419.873C136.376 456.694 165.653 467.689 208.992 497.873C249.433 526.037 269.835 545.549 312.975 569.372Z"
+                                            fill="#BC9273" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <p class="title-string last-title">thank
+                                you</p>
+                        </div>
+
+                        <ul class="info-list">
+                            <li>
+                                <p>
+                                    <img src="./img/icon_home.png" alt="adress">
+                                    <span>서울시 중랑구 면목동</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="./img/icon_mail.png" alt="e-mail">
+                                    <span>sh_9112@naver.com</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="./img/icon_phone.png" alt="adress">
+                                    <span>010-2466-9112</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="./img/icon_kakao_black.png" alt="sns-id">
+                                    <span>https://open.kakao.com/o/s0g91Yve</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <footer></footer>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

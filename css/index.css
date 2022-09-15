@@ -1,0 +1,1119 @@
+@charset "UTF-8";
+@import url("./common.css");
+aside {
+  display: none;
+}
+aside > a {
+  display: block;
+  width: 12vw;
+  padding: 0.8vw 5vw 0.8vw 1vw;
+  background-color: #bc9273;
+  border-top-left-radius: 1.5vw;
+  border-bottom-left-radius: 1.5vw;
+  color: #faf2ed;
+  font-size: 1.2vw;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  z-index: 10;
+  transition: 0.5s;
+}
+aside > a:nth-of-type(1) {
+  right: -6%;
+  top: 10vw;
+}
+aside > a:nth-of-type(2) {
+  right: -6%;
+  top: 14vw;
+}
+aside > a:nth-of-type(3) {
+  right: -6%;
+  top: 18vw;
+}
+aside > a:nth-of-type(4) {
+  right: -6%;
+  top: 22vw;
+}
+aside > a.active {
+  right: -3%;
+  background-color: rgb(128, 23, 27);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+main .contents {
+  position: relative;
+  transition: 1s;
+}
+main .contents .title {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+main .contents .title .shape_box {
+  width: 100%;
+  margin: 0 auto;
+}
+main .contents .title .shape_box .shape_main {
+  width: 100%;
+}
+main .contents .title .shape_box .shape_main > svg {
+  width: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .contents .title .shape_box .shape_01 > svg {
+  width: 300px;
+  position: absolute;
+  left: 8%;
+  top: 15%;
+}
+main .contents .title .shape_box .shape_02 > svg {
+  width: 250px;
+  position: absolute;
+  left: -2%;
+  bottom: 8%;
+}
+main .contents .title .shape_box .shape_03 > svg {
+  width: 300px;
+  position: absolute;
+  right: -2%;
+  top: 25%;
+}
+main .contents .title .title-all {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .contents .title .title-all .point {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  transform: translate(0, -50%) rotate(-12deg);
+  letter-spacing: 0.8vw;
+  line-height: 1;
+}
+main .contents .title .title-all .main-title {
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .contents .title .title-all .sub-title {
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  left: 57%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+}
+main .contents .about-page {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 3.5vw 0;
+  position: relative;
+  overflow: hidden;
+}
+main .contents .about-page .centerline {
+  width: 1px;
+  height: 40vw;
+  border: 1px solid #ccc;
+  box-shadow: 0.2vw 0.3vw 0.5vw 0 #ccc;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+main .contents .about-page .centerline > span {
+  display: block;
+}
+main .contents .about-page > .shape-bg {
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main .contents .about-page > .shape-bg .shape2-1 > svg {
+  width: 250px;
+  position: absolute;
+  left: 11%;
+  bottom: 20%;
+}
+main .contents .about-page > .shape-bg .shape2-2 > svg {
+  width: 200px;
+  position: absolute;
+  left: 30%;
+  top: 17%;
+}
+main .contents .about-page .content-title {
+  width: 82%;
+  height: 2.5vw;
+  margin: 0 auto 3.5vw;
+  position: relative;
+  padding: 0.1vw 0;
+}
+main .contents .about-page .content-title .h2 {
+  display: inline-block;
+}
+main .contents .about-page .content-title .underline {
+  display: block;
+  width: 8vw;
+  height: 1.5vw;
+  background-color: #bc9273;
+  position: absolute;
+  left: 2vw;
+  bottom: 0;
+  z-index: -10;
+}
+main .contents .about-page .about-detail {
+  width: 82%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main .contents .about-page .about-detail .about-contents {
+  width: 50%;
+  flex-shrink: 0;
+}
+main .contents .about-page .about-detail .about-contents .about-me {
+  width: 100%;
+  padding: 0 2vw;
+  margin-bottom: 2.5vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+main .contents .about-page .about-detail .about-contents .about-me .photo {
+  width: 10vw;
+  flex-shrink: 0;
+}
+main .contents .about-page .about-detail .about-contents .about-me .photo > img {
+  width: 100%;
+}
+main .contents .about-page .about-detail .about-contents .about-me .intro {
+  font-size: 1.2vw;
+  padding-left: 2.5vw;
+  white-space: pre-line;
+  letter-spacing: 0.1rem;
+  line-height: 1.9vw;
+}
+main .contents .about-page .about-detail .about-contents .education {
+  width: 100%;
+  padding: 0 2vw;
+  margin-bottom: 2.5vw;
+}
+main .contents .about-page .about-detail .about-contents .education .small-title {
+  margin-bottom: 1vw;
+}
+main .contents .about-page .about-detail .about-contents .education .small-title b {
+  font-size: 1.2vw;
+}
+main .contents .about-page .about-detail .about-contents .education .list01 > li {
+  padding-bottom: 0.3vw;
+  font-size: 1vw;
+}
+main .contents .about-page .about-detail .about-contents .education .list01 > li > span {
+  text-indent: -4.5em;
+  margin-left: 4.5em;
+  font-size: 1vw;
+}
+main .contents .about-page .about-detail .about-contents .certificate {
+  width: 100%;
+  padding: 0 2vw;
+  margin-bottom: 2.5vw;
+}
+main .contents .about-page .about-detail .about-contents .certificate .small-title {
+  margin-bottom: 1vw;
+}
+main .contents .about-page .about-detail .about-contents .certificate .small-title b {
+  font-size: 1.2vw;
+}
+main .contents .about-page .about-detail .about-contents .certificate .list02 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main .contents .about-page .about-detail .about-contents .certificate .list02 > li {
+  margin-right: 3vw;
+  flex-shrink: 0;
+  font-size: 1vw;
+}
+main .contents .about-page .about-detail .about-contents .certificate .list02 > li > p {
+  margin-bottom: 0.3vw;
+  font-size: 1vw;
+}
+main .contents .about-page .about-detail .skill {
+  width: 50%;
+  padding: 0 2vw;
+  margin-bottom: 0px;
+  margin-top: 0vw;
+}
+main .contents .about-page .about-detail .skill .small-title {
+  margin-bottom: 2vw;
+}
+main .contents .about-page .about-detail .skill .small-title b {
+  font-size: 1.2vw;
+}
+main .contents .about-page .about-detail .skill .donut-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+main .contents .about-page .about-detail .skill .donut-container > li {
+  width: 25%;
+  margin-bottom: 1.5vw;
+  position: relative;
+  display: none;
+  flex-shrink: 0;
+}
+main .contents .about-page .about-detail .skill .donut-container > li.active {
+  display: block;
+}
+main .contents .about-page .about-detail .skill .donut-container > li .donut {
+  text-align: center;
+  position: relative;
+}
+main .contents .about-page .about-detail .skill .donut-container > li .donut > svg {
+  fill: transparent;
+  stroke: #bc9273;
+  stroke-width: 10px;
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+}
+main .contents .about-page .about-detail .skill .donut-container > li .donut .nine {
+  -webkit-animation: pernine 3s forwards;
+          animation: pernine 3s forwards;
+}
+main .contents .about-page .about-detail .skill .donut-container > li .donut .seven {
+  -webkit-animation: persev 3s forwards;
+          animation: persev 3s forwards;
+}
+main .contents .about-page .about-detail .skill .donut-container > li .donut .four {
+  -webkit-animation: perfour 3s forwards;
+          animation: perfour 3s forwards;
+}
+main .contents .about-page .about-detail .skill .donut-container > li .donut .five {
+  -webkit-animation: perfive 3s forwards;
+          animation: perfive 3s forwards;
+}
+main .contents .about-page .about-detail .skill .donut-container > li .donut .eight {
+  -webkit-animation: pereig 3s forwards;
+          animation: pereig 3s forwards;
+}
+@-webkit-keyframes perfour {
+  100% {
+    stroke-dashoffset: 390px;
+  }
+}
+@keyframes perfour {
+  100% {
+    stroke-dashoffset: 390px;
+  }
+}
+@-webkit-keyframes perfive {
+  100% {
+    stroke-dashoffset: 370px;
+  }
+}
+@keyframes perfive {
+  100% {
+    stroke-dashoffset: 370px;
+  }
+}
+@-webkit-keyframes persev {
+  100% {
+    stroke-dashoffset: 320px;
+  }
+}
+@keyframes persev {
+  100% {
+    stroke-dashoffset: 320px;
+  }
+}
+@-webkit-keyframes pereig {
+  100% {
+    stroke-dashoffset: 300px;
+  }
+}
+@keyframes pereig {
+  100% {
+    stroke-dashoffset: 300px;
+  }
+}
+@-webkit-keyframes pernine {
+  100% {
+    stroke-dashoffset: 285px;
+  }
+}
+@keyframes pernine {
+  100% {
+    stroke-dashoffset: 285px;
+  }
+}
+main .contents .about-page .about-detail .skill .donut-container > li .donut .count {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.2vw;
+}
+main .contents .about-page .about-detail .skill .donut-container > li .subject {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .contents .works-page {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 3.5vw 0;
+  position: relative;
+  overflow: hidden;
+}
+main .contents .works-page .shape-bg {
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main .contents .works-page .shape-bg .shape3-1 > svg {
+  width: 250px;
+  position: absolute;
+  left: 6%;
+  bottom: 6%;
+  opacity: 0.6;
+}
+main .contents .works-page .shape-bg .shape3-2 > svg {
+  width: 200px;
+  position: absolute;
+  left: -1%;
+  top: 20%;
+  opacity: 0.6;
+}
+main .contents .works-page .shape-bg .shape3-3 > svg {
+  width: 300px;
+  position: absolute;
+  right: -1.5%;
+  top: 26%;
+  opacity: 0.6;
+  z-index: -10;
+}
+main .contents .works-page .content-title {
+  width: 82%;
+  height: 2.5vw;
+  margin: 0 auto 3.5vw;
+  position: relative;
+  padding: 0.1vw 0;
+}
+main .contents .works-page .content-title .h2 {
+  display: inline-block;
+}
+main .contents .works-page .content-title .underline {
+  display: block;
+  width: 8vw;
+  height: 1.5vw;
+  background-color: #bc9273;
+  position: absolute;
+  left: 3vw;
+  bottom: 0;
+  z-index: -10;
+}
+main .contents .contact-page {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 3.5vw 0;
+  position: relative;
+  overflow: hidden;
+}
+main .contents .contact-page .centerline {
+  width: 1px;
+  height: 34vw;
+  border: 1px solid #ccc;
+  box-shadow: 0.2vw 0.3vw 0.5vw 0 #ccc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+main .contents .contact-page .centerline > span {
+  display: block;
+}
+main .contents .contact-page .content-title {
+  width: 82%;
+  height: 2.5vw;
+  margin: 0 auto 3.5vw;
+  position: relative;
+  padding: 0.1vw 0;
+}
+main .contents .contact-page .content-title .h2 {
+  display: inline-block;
+}
+main .contents .contact-page .content-title .underline {
+  display: block;
+  width: 10.5vw;
+  height: 1.5vw;
+  background-color: #bc9273;
+  position: absolute;
+  left: 2vw;
+  bottom: 0;
+  z-index: -10;
+}
+main .contents .contact-page .last {
+  width: 82%;
+  height: 100%;
+  margin: 0 auto;
+}
+main .contents .contact-page .last .thanks {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+main .contents .contact-page .last .thanks .shape_main {
+  width: 50%;
+  height: 100%;
+  padding: 0 2vw;
+  flex-shrink: 0;
+  position: relative;
+}
+main .contents .contact-page .last .thanks .shape_main > div {
+  height: 100%;
+}
+main .contents .contact-page .last .thanks .shape_main > div > p {
+  width: 100%;
+}
+main .contents .contact-page .last .thanks .shape_main > div > p > svg {
+  width: 600px;
+  z-index: -5;
+  padding-right: 3vw;
+}
+main .contents .contact-page .last .thanks .shape_main .last-title {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 5vw;
+  text-align: right;
+  text-transform: uppercase;
+  white-space: pre-line;
+  align-items: center;
+}
+main .contents .contact-page .last .thanks .info-list {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2vw 0 4vw;
+}
+main .contents .contact-page .last .thanks .info-list > li {
+  width: 100%;
+  margin-bottom: 2vw;
+}
+main .contents .contact-page .last .thanks .info-list > li > p > img {
+  width: 2.4vw;
+}
+main .contents .contact-page .last .thanks .info-list > li > p > span {
+  padding-left: 0.5vw;
+  font-size: 1.4vw;
+}
+
+/*
+==============================================
+=================반응형 데스크탑================
+==============================================
+*/
+@media (min-width: 1025px) and (max-width: 1600px) {
+  aside {
+    display: none;
+  }
+  aside > a {
+    display: block;
+    width: 12vw;
+    padding: 0.8vw 5vw 0.8vw 1vw;
+    background-color: #bc9273;
+    border-top-left-radius: 1.5vw;
+    border-bottom-left-radius: 1.5vw;
+    color: #faf2ed;
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    position: fixed;
+    z-index: 10;
+    transition: 0.5s;
+  }
+  aside > a:nth-of-type(1) {
+    right: -6%;
+    top: 10vw;
+  }
+  aside > a:nth-of-type(2) {
+    right: -6%;
+    top: 14vw;
+  }
+  aside > a:nth-of-type(3) {
+    right: -6%;
+    top: 18vw;
+  }
+  aside > a:nth-of-type(4) {
+    right: -6%;
+    top: 22vw;
+  }
+  aside > a.active {
+    right: -3%;
+    background-color: rgb(128, 23, 27);
+  }
+  main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  main .contents {
+    position: relative;
+    transition: 1s;
+  }
+  main .contents .title {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  main .contents .title .shape_box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .contents .title .shape_box .shape_main {
+    width: 100%;
+  }
+  main .contents .title .shape_box .shape_main > svg {
+    width: 550px;
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+  }
+  main .contents .title .shape_box .shape_01 > svg {
+    width: 230px;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+  }
+  main .contents .title .shape_box .shape_02 > svg {
+    width: 200px;
+    position: absolute;
+    left: -2%;
+    bottom: 8%;
+  }
+  main .contents .title .shape_box .shape_03 > svg {
+    width: 300px;
+    position: absolute;
+    right: -2%;
+    top: 25%;
+  }
+  main .contents .title .title-all {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main .contents .title .title-all .point {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transform: translateY(-50%);
+    transform: rotate(-12deg);
+    letter-spacing: 0.8vw;
+    line-height: 1;
+  }
+  main .contents .title .title-all .main-title {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main .contents .title .title-all .sub-title {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    left: 57%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+  }
+  main .contents .about-page {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 3vw 0;
+    position: relative;
+    overflow: hidden;
+  }
+  main .contents .about-page .centerline {
+    width: 1px;
+    height: 35vw;
+    border: 1px solid #ccc;
+    box-shadow: 0.2vw 0.3vw 0.5vw 0 #ccc;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+  }
+  main .contents .about-page .centerline > span {
+    display: block;
+  }
+  main .contents .about-page > .shape-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  main .contents .about-page > .shape-bg .shape2-1 > svg {
+    width: 170px;
+    position: absolute;
+    left: 11%;
+    bottom: 20%;
+  }
+  main .contents .about-page > .shape-bg .shape2-2 > svg {
+    width: 150px;
+    position: absolute;
+    left: 30%;
+    top: 17%;
+  }
+  main .contents .about-page .content-title {
+    width: 82%;
+    height: 2.5vw;
+    margin: 0 auto 3vw;
+    position: relative;
+    padding: 0.1vw 0;
+  }
+  main .contents .about-page .content-title .h2 {
+    display: inline-block;
+  }
+  main .contents .about-page .content-title .underline {
+    display: block;
+    width: 8vw;
+    height: 1.5vw;
+    background-color: #bc9273;
+    position: absolute;
+    left: 2vw;
+    bottom: 0;
+    z-index: -10;
+  }
+  main .contents .about-page .about-detail {
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main .contents .about-page .about-detail .about-contents {
+    width: 50%;
+    flex-shrink: 0;
+  }
+  main .contents .about-page .about-detail .about-contents .about-me {
+    width: 100%;
+    padding: 0 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  main .contents .about-page .about-detail .about-contents .about-me .photo {
+    width: 10vw;
+    flex-shrink: 0;
+  }
+  main .contents .about-page .about-detail .about-contents .about-me .photo > img {
+    width: 100%;
+  }
+  main .contents .about-page .about-detail .about-contents .about-me .intro {
+    padding-left: 1.5vw;
+    white-space: pre-line;
+    letter-spacing: 0.1rem;
+    line-height: 1.9vw;
+    font-weight: 500;
+    font-size: 1.2vw;
+  }
+  main .contents .about-page .about-detail .about-contents .education {
+    width: 100%;
+    padding: 0 2vw;
+    margin-bottom: 2vw;
+  }
+  main .contents .about-page .about-detail .about-contents .education .small-title {
+    margin-bottom: 1vw;
+  }
+  main .contents .about-page .about-detail .about-contents .education .small-title b {
+    font-size: 1.2vw;
+  }
+  main .contents .about-page .about-detail .about-contents .education .list01 > li {
+    padding-bottom: 0.3vw;
+    font-size: 1vw;
+  }
+  main .contents .about-page .about-detail .about-contents .education .list01 > li > span {
+    text-indent: -4.5em;
+    margin-left: 4.5em;
+    font-size: 1vw;
+  }
+  main .contents .about-page .about-detail .about-contents .certificate {
+    width: 100%;
+    padding: 0 2vw;
+    margin-bottom: 2vw;
+  }
+  main .contents .about-page .about-detail .about-contents .certificate .small-title {
+    margin-bottom: 1vw;
+  }
+  main .contents .about-page .about-detail .about-contents .certificate .small-title b {
+    font-size: 1.2vw;
+  }
+  main .contents .about-page .about-detail .about-contents .certificate .list02 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  main .contents .about-page .about-detail .about-contents .certificate .list02 > li {
+    margin-right: 3vw;
+    flex-shrink: 0;
+  }
+  main .contents .about-page .about-detail .about-contents .certificate .list02 > li > p {
+    margin-bottom: 0.3vw;
+    font-size: 1vw;
+  }
+  main .contents .about-page .about-detail .skill {
+    width: 50%;
+    padding: 0 2vw;
+    margin-bottom: 0px;
+    margin-top: 2vw;
+  }
+  main .contents .about-page .about-detail .skill .small-title {
+    margin-bottom: 2vw;
+  }
+  main .contents .about-page .about-detail .skill .small-title b {
+    font-size: 1.2vw;
+  }
+  main .contents .about-page .about-detail .skill .donut-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li {
+    width: 25%;
+    margin-bottom: 1.1vw;
+    position: relative;
+    display: none;
+    flex-shrink: 0;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li.active {
+    display: block;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .donut {
+    text-align: center;
+    position: relative;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .donut > svg {
+    width: 100px;
+    height: 100px;
+    fill: transparent;
+    stroke: #bc9273;
+    stroke-width: 8px;
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .donut .nine {
+    -webkit-animation: pernine 3s forwards;
+            animation: pernine 3s forwards;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .donut .seven {
+    -webkit-animation: persev 3s forwards;
+            animation: persev 3s forwards;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .donut .four {
+    -webkit-animation: perfour 3s forwards;
+            animation: perfour 3s forwards;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .donut .five {
+    -webkit-animation: perfive 3s forwards;
+            animation: perfive 3s forwards;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .donut .eight {
+    -webkit-animation: pereig 3s forwards;
+            animation: pereig 3s forwards;
+  }
+  @-webkit-keyframes perfour {
+    100% {
+      stroke-dashoffset: 390px;
+    }
+  }
+  @keyframes perfour {
+    100% {
+      stroke-dashoffset: 390px;
+    }
+  }
+  @-webkit-keyframes perfive {
+    100% {
+      stroke-dashoffset: 370px;
+    }
+  }
+  @keyframes perfive {
+    100% {
+      stroke-dashoffset: 370px;
+    }
+  }
+  @-webkit-keyframes persev {
+    100% {
+      stroke-dashoffset: 320px;
+    }
+  }
+  @keyframes persev {
+    100% {
+      stroke-dashoffset: 320px;
+    }
+  }
+  @-webkit-keyframes pereig {
+    100% {
+      stroke-dashoffset: 300px;
+    }
+  }
+  @keyframes pereig {
+    100% {
+      stroke-dashoffset: 300px;
+    }
+  }
+  @-webkit-keyframes pernine {
+    100% {
+      stroke-dashoffset: 285px;
+    }
+  }
+  @keyframes pernine {
+    100% {
+      stroke-dashoffset: 285px;
+    }
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .donut .count {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.2vw;
+  }
+  main .contents .about-page .about-detail .skill .donut-container > li .subject {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0.5vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  main .contents .works-page {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 3.5vw 0;
+    position: relative;
+    overflow: hidden;
+  }
+  main .contents .works-page .shape-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  main .contents .works-page .shape-bg .shape3-1 > svg {
+    width: 200px;
+    position: absolute;
+    left: 6%;
+    bottom: 6%;
+    opacity: 0.6;
+  }
+  main .contents .works-page .shape-bg .shape3-2 > svg {
+    width: 180px;
+    position: absolute;
+    left: -1%;
+    top: 20%;
+    opacity: 0.6;
+  }
+  main .contents .works-page .shape-bg .shape3-3 > svg {
+    width: 280px;
+    position: absolute;
+    right: -1.5%;
+    top: 26%;
+    opacity: 0.6;
+    z-index: -10;
+  }
+  main .contents .works-page .content-title {
+    width: 82%;
+    height: 2.5vw;
+    margin: 0 auto 3vw;
+    position: relative;
+    padding: 0.1vw 0;
+  }
+  main .contents .works-page .content-title .h2 {
+    display: inline-block;
+  }
+  main .contents .works-page .content-title .underline {
+    display: block;
+    width: 8vw;
+    height: 1.5vw;
+    background-color: #bc9273;
+    position: absolute;
+    left: 3vw;
+    bottom: 0;
+    z-index: -10;
+  }
+  main .contents .contact-page {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 3.5vw 0;
+    position: relative;
+    overflow: hidden;
+  }
+  main .contents .contact-page .centerline {
+    width: 1px;
+    height: 30vw;
+    border: 1px solid #ccc;
+    box-shadow: 0.2vw 0.3vw 0.5vw 0 #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+  }
+  main .contents .contact-page .centerline > span {
+    display: block;
+  }
+  main .contents .contact-page .content-title {
+    width: 82%;
+    height: 2.5vw;
+    margin: 0 auto 3vw;
+    position: relative;
+    padding: 0.1vw 0;
+  }
+  main .contents .contact-page .content-title .h2 {
+    display: inline-block;
+  }
+  main .contents .contact-page .content-title .underline {
+    display: block;
+    width: 10.5vw;
+    height: 1.5vw;
+    background-color: #bc9273;
+    position: absolute;
+    left: 2vw;
+    bottom: 0;
+    z-index: -10;
+  }
+  main .contents .contact-page .last {
+    width: 82%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  main .contents .contact-page .last .thanks {
+    width: 100%;
+    width: 100%;
+    margin: 5vw auto;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .contents .contact-page .last .thanks .shape_main {
+    width: 50%;
+    height: 100%;
+    padding: 0 2vw;
+    flex-shrink: 0;
+    position: relative;
+  }
+  main .contents .contact-page .last .thanks .shape_main > div {
+    height: 100%;
+  }
+  main .contents .contact-page .last .thanks .shape_main > div > p {
+    width: 100%;
+  }
+  main .contents .contact-page .last .thanks .shape_main > div > p > svg {
+    width: 500px;
+    z-index: -5;
+    padding-right: 3vw;
+  }
+  main .contents .contact-page .last .thanks .shape_main .last-title {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 5vw;
+    text-align: right;
+    text-transform: uppercase;
+    white-space: pre-line;
+    align-items: center;
+  }
+  main .contents .contact-page .last .thanks .info-list {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2vw 0 6vw;
+  }
+  main .contents .contact-page .last .thanks .info-list > li {
+    width: 100%;
+    margin-bottom: 2vw;
+  }
+  main .contents .contact-page .last .thanks .info-list > li > p > img {
+    width: 2.6vw;
+  }
+  main .contents .contact-page .last .thanks .info-list > li > p > span {
+    padding-left: 1vw;
+    font-size: 1.2vw;
+  }
+}/*# sourceMappingURL=index.css.map */
