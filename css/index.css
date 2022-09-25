@@ -65,7 +65,7 @@ main .contents .title .shape_box .shape_main {
   width: 100%;
 }
 main .contents .title .shape_box .shape_main > svg {
-  width: 700px;
+  width: 800px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -521,13 +521,13 @@ main .contents .contact-page .last .thanks .shape_main > div > p {
   width: 100%;
 }
 main .contents .contact-page .last .thanks .shape_main > div > p > svg {
-  width: 600px;
+  width: 650px;
   z-index: -5;
   padding-right: 3vw;
 }
 main .contents .contact-page .last .thanks .shape_main .last-title {
   position: absolute;
-  left: 40%;
+  left: 35%;
   top: 50%;
   transform: translate(-50%, -50%);
   line-height: 5vw;
@@ -551,6 +551,9 @@ main .contents .contact-page .last .thanks .info-list > li > p > img {
 }
 main .contents .contact-page .last .thanks .info-list > li > p > span {
   padding-left: 0.5vw;
+  font-size: 1.4vw;
+}
+main .contents .contact-page .last .thanks .info-list > li > p > span > a {
   font-size: 1.4vw;
 }
 
@@ -1114,6 +1117,9 @@ main .contents .contact-page .last .thanks .info-list > li > p > span {
   }
   main .contents .contact-page .last .thanks .info-list > li > p > span {
     padding-left: 1vw;
+    font-size: 1.2vw;
+  }
+  main .contents .contact-page .last .thanks .info-list > li > p > span > a {
     font-size: 1.2vw;
   }
 }/*# sourceMappingURL=index.css.map */
