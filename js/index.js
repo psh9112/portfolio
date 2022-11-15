@@ -27,6 +27,7 @@ function init() {
         $(window).scrollTop(1000 * k);
         // pageMove();
     });
+    
     $('aside > a').on('click', function () {
         event.preventDefault();
         idx = $(this).index();
@@ -43,7 +44,6 @@ function init() {
 
 
     function pageMove() {
-        // $(window).scrollTop(offsetTop[idx]);
         
         if (idx == 0) {
             $('header').removeClass('active');
