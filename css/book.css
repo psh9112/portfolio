@@ -63,6 +63,8 @@
 }
 #album #flipbook .page-wrapper .bg .compar_btn {
   padding: 0 1.5vw;
+  display: flex;
+  justify-content: left;
 }
 #album #flipbook .page-wrapper .bg .compar_btn > a {
   display: inline-block;

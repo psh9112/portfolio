@@ -72,7 +72,9 @@
 
                 .compar_btn {
                     padding: 0 1.5vw;
-
+                    display: flex;
+                    justify-content: left;
+                    
                     >a {
                         display: inline-block;
                         margin-right: 1.5vw;
